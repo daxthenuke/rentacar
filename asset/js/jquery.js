@@ -9067,7 +9067,13 @@ jQuery.extend( {
 		contents: {
 			xml: /\bxml\b/,
 			html: /\bhtml/,
-			json: /\bjson\b/
+			json: /\bjson\b/,
+			get json() {
+				return this.json;
+			},
+			set json(value) {
+				this.json = value;
+			},
 		},
 
 		responseFields: {
