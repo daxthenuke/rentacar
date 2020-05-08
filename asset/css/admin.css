@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* style for links */
+a:link, a:visited {
+    color: #a20700;
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    color: #4F0103;
+    text-decoration: underline;
+}
+a:active {
+    color: #666666;
+}
+/* style for login load */
+
+.login{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.form{
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px;
+    background-color: #cbcbcb;
+    border-radius: 3px;
+}
+
+.form img{
+    width: 150px;
+    padding: 5px;
+}
+
+.buttonforlogin{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+.buttonforlogin i{
+    font-size: 25px;
+}
+
+.message{
+    padding: 15px;
+}
+
+
+/* style for header */
+.header{
+
+    background-color: #af0600;
+    color: white;
+}
+
+.hcontent{
+    margin: 0 auto;
+    width: 1064px;
+    display: flow-root;
+}
+
+.logo{
+    float: left;
+    padding: 5px;
+}
+
+.logo img{
+    width: 150px;
+}
+.tittle{
+    float: left;
+    color: white;
+}
+.tittle a{
+    color: white;
+}
+
+.tittle a:hover{
+    text-decoration: none;
+}
+
+.tittle h2{
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+.tittle p{
+    margin: 0;
+}
+
+.navbar{
+    float: right;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flow-root;
+}
+
+.navbar ul li{
+    float: left;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar ul li a{
+    color: white;
+    padding: 5px;
+}
+
+.navbar ul li:hover{
+    background-color: #ffffff;
+    color: #af0600;
+    border-radius: 2px;
+}
+
+.navbar ul li a:hover{
+    color: #af0600;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.content{
+    width: 1064px;
+    margin: 15px auto;
+    display: flow-root;
+}
+/* style for sidebar */
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 15px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li{
+    padding: 5px;
+    background-color: #af0600;
+    margin: 5px;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.sidebar ul li ul li{
+    background-color: #cb0000;
+    display: block;
+}
+
+.activeul{
+    display: block;
+}
+.nonactiveul{
+    display: none;
+}
+
+#active{
+    background-color: #740003;
+}
+
+
+.content{
+    -webkit-box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.62);
+    -moz-box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.62);
+    box-shadow: 0px 0px 19px -6px rgba(0,0,0,0.62);
+}
+
+.main{
+    float: left;
+    padding: 15px;
+    width: 750px;
+}
+.main table td{
+    font-size: 10px;
+}
+
+.main table th{
+    font-size: 12px;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #c7c7c7;
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Rent a car - application</title>
+    <meta charset="utf-8">
+    <meta name="description" content="application for rent a car">
+    <link rel="stylesheet" href="asset/css/style.css" type="text/css" media="screen" />
+    <script src="https://kit.fontawesome.com/dd9d49e9ef.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="index.php"><img src="asset/img/logo-speed.png" alt="logo"></a>
+        <div class="socialnetworkicons">
+            <a href="#facebook"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <nav class="topnav">
+            <ul>
+                <li><a href="">Početna</a></li>
+                <li><a href="">O nama</a></li>
+                <li><a href="">Kontakt</a></li>
+                <?= (Functions::is_logged_in())? "<li><a href='/rac/panel'>". $_SESSION['username'].' '."('{$_SESSION['role_name']}')</a></li>" : "<li><a href='/rac/panel'>Prijavi se</a></li>"  ?>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="navbar">
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Biznis klasa</a></li>
+            <li><a href="#">Sport klasa</a></li>
+            <li><a href="#">Eko klasa</a></li>
+            <li><a href="#">Mini klasa</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="frontimage">
+    <div class="imgopaticy">
+        <div class="fronttext">
+            <p>Iznajmi automobil kod najboljih i najpovoljnijih!</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper">
+        <?php include_once "{$view}"; ?>
+</div>
+<footer class="footer">
+    <p>Rent a car application 2020 &copy; by Srdjan Radosavljevic </p>
+</footer>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Administracioni panel - Rent a car Speed</title>
+    <meta charset="utf-8">
+    <meta name="description" content="application for rent a car">
+    <link rel="stylesheet" href="../asset/css/admin.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="../asset/js/jquery.js"></script>
+    <script type="text/javascript" src="../asset/js/menu.js"></script>
+</head>
+<body>
+<?php
+$username=$_SESSION['username'];
+$status = $_SESSION['role_name'];
+?>
+<div class="header">
+    <div class="hcontent">
+        <div class="logo">
+            <a href="index.php"><img src="../asset/img/logo-speed.png"></a>
+        </div>
+        <div class="tittle">
+            <a href="index.php"><h2> <?= ($status=='administrator')? 'Administracioni' : 'Moderacioni' ?> panel</h2></a>
+            <p>Dobrošao  <?= $status . 'e - '. $username ?></p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.php">Početna</a></li>
+                <li id="profile">Profil</li>
+                <li><a href="?logout">Odjavi se</a> </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="content">
+    <?php include_once ($view); ?>
+</div>
+<footer class="footer">
+    <p>Rent a car application 2020 © by Srdjan Radosavljevic</p>
+</footer>
+</body>
+</html>
+

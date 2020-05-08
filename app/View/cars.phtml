@@ -1,0 +1,27 @@
+<h2>Izaberite automobile:</h2>
+<section class="cars">
+    <?php
+    if($cars==null){
+        echo '<p> Nema unetih automobila! </p>';
+    }else{
+        foreach ($cars as $car){
+            echo "<article class='car'>
+                <h1>{$car['brand_name']} {$car['model']}</h1>";
+            $imagecar=selectImageCar($car['image']);
+            echo "<img src='asset/img/cars/{$imagecar}' alt='Nema slike!'>
+                <p>Na stanju: {$car['availble']}</p>
+                <div class='price'><p><b>Cena:</b></p>
+                <p>24 časa: {$car['24h']}</p>
+                <p>48 časa: {$car['48h']}</p>
+                <p>72 časa: {$car['72h']}</p></div>
+                
+                <div class='rentbutton'>
+                <a href='?rent&car_id={$car['id']}'>Iznajmi</a>
+                </div>";
+        }
+    }
+    ?>
+</section>
+<section class="aboutus">
+    <p><?= $informations ?></p>
+</section>

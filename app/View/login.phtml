@@ -1,0 +1,18 @@
+<img src="../asset/img/logo-speed.png">
+<h1>Login</h1>
+<form action="#" method="post" onsubmit="valdateForm();">
+    <label for="username">
+        <i class="fas fa-user"></i>
+    </label>
+    <input type="text" name="username" placeholder="Korisničko ime ili e-pošta" id="username" required>
+    <br><br>
+    <label for="password">
+        <i class="fas fa-lock"></i>
+    </label>
+    <input type="password" name="password" placeholder="Lozinka" id="password" required>
+    <br><br>
+    <input type="submit" value="Prijavi se">
+    <br>
+    <p>Zaboravio sam lozinku, resetuj lozinku <a href="?resset_password">ovde.</a> </p>
+    <div class="message"><?= $message ?></div>
+</form>

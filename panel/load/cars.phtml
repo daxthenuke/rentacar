@@ -1,0 +1,18 @@
+<script>
+    $(function () {
+        $.get('../communicator.php?getallcars', function (data) {
+            let cars = json.parse(data);
+            let output = '';
+            for(let x in cars){
+                output+="<div class='cars' data-id ='"+cars[x].id"' data-ime='"+cars[x].model"'>Ovo je div</div>";
+            }
+            $('.load').html(output);
+        })
+    })
+</script>
+
+
+<div class="load">
+<p> ovo je iz carsa </p>
+
+</div>
